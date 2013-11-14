@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1FB2C0BC1833609A002E34E1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2C0BB1833609A002E34E1 /* main.c */; };
 		1FB2C0BE1833609A002E34E1 /* psobase.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FB2C0BD1833609A002E34E1 /* psobase.1 */; };
+		1FB2C0CB18336169002E34E1 /* pso.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2C0C718336169002E34E1 /* pso.c */; };
+		1FB2C0CC18336169002E34E1 /* zrandom.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2C0C918336169002E34E1 /* zrandom.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,11 @@
 		1FB2C0B81833609A002E34E1 /* psobase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = psobase; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB2C0BB1833609A002E34E1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		1FB2C0BD1833609A002E34E1 /* psobase.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = psobase.1; sourceTree = "<group>"; };
+		1FB2C0C618336169002E34E1 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defines.h; path = pso/defines.h; sourceTree = "<group>"; };
+		1FB2C0C718336169002E34E1 /* pso.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pso.c; path = pso/pso.c; sourceTree = "<group>"; };
+		1FB2C0C818336169002E34E1 /* pso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pso.h; path = pso/pso.h; sourceTree = "<group>"; };
+		1FB2C0C918336169002E34E1 /* zrandom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zrandom.c; path = pso/zrandom.c; sourceTree = "<group>"; };
+		1FB2C0CA18336169002E34E1 /* zrandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zrandom.h; path = pso/zrandom.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 		1FB2C0AF1833609A002E34E1 = {
 			isa = PBXGroup;
 			children = (
+				1FB2C0C4183360DA002E34E1 /* pso */,
 				1FB2C0BA1833609A002E34E1 /* psobase */,
 				1FB2C0B91833609A002E34E1 /* Products */,
 			);
@@ -64,6 +72,18 @@
 				1FB2C0BD1833609A002E34E1 /* psobase.1 */,
 			);
 			path = psobase;
+			sourceTree = "<group>";
+		};
+		1FB2C0C4183360DA002E34E1 /* pso */ = {
+			isa = PBXGroup;
+			children = (
+				1FB2C0C618336169002E34E1 /* defines.h */,
+				1FB2C0C718336169002E34E1 /* pso.c */,
+				1FB2C0C818336169002E34E1 /* pso.h */,
+				1FB2C0C918336169002E34E1 /* zrandom.c */,
+				1FB2C0CA18336169002E34E1 /* zrandom.h */,
+			);
+			name = pso;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB2C0CB18336169002E34E1 /* pso.c in Sources */,
+				1FB2C0CC18336169002E34E1 /* zrandom.c in Sources */,
 				1FB2C0BC1833609A002E34E1 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
